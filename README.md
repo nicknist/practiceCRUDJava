@@ -20,7 +20,8 @@ Things that a user is able to do:
 
 ## Setup:
 In order to run this program, you can start by cloning down this repo. Since this is in java, you will need to compile the java files into class files, so from the directory run this command to compile your classes: 
-```javac -cp lib/practiceCRUD.jar -d classes src/sample/Main.java src/sample/Login.java src/sample/User.java src/sample/UserData.java
+```
+javac -cp lib/practiceCRUD.jar -d classes src/sample/Main.java src/sample/Login.java src/sample/User.java src/sample/UserData.java
 ```
 
 Once your files have compiled, use this command to run the program!
