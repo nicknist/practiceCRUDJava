@@ -27,14 +27,14 @@ Things that a user is able to do:
 * I would like to add a 'persistent state' of the data on this program so that when things happen, they persist and continue to be true. For example, if you add a friend, when you come back later the friend should be there.
 
 ## Working Demo:
-### Initial Steps:
-![open-page.gif](https://github.com)
+### Initial Login:
+![src/sample/login.gif](src/sample/login.gif)
 
-### Adding a Post:
-![card-flip.gif](https://github.com)
+### Changing a Post:
+![src/sample/change-post.gif](src/sample/change-post.gif)
 
 ### Deleting a Friend:
-![card-flip.gif](https://github.com)
+![src/sample/delete-friend.gif](src/sample/delete-friend.gif)
 
 ### GitHub:
 
