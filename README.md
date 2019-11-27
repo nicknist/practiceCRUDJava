@@ -16,6 +16,17 @@ Things that a user is able to do:
 4. Delete Posts
 5. Add Friends
 6. Delete Friends
+7. Logout
+
+## Setup:
+In order to run this program, you can start by cloning down this repo. Since this is in java, you will need to compile the java files into class files, so from the directory run this command to compile your classes: 
+```javac -cp lib/practiceCRUD.jar -d classes src/sample/Main.java src/sample/Login.java src/sample/User.java src/sample/UserData.java
+```
+
+Once your files have compiled, use this command to run the program!
+```
+java -cp lib/practiceCRUD.jar:classes sample.Main
+```
 
 ## Wins:
 * This project was really enjoyable to learn a new language, especially one that is so explicit with the way that variables are written. Coming from JavaScript, this language was easy to understand with classes but some of the intricacies took a while to fully understand how it works.
@@ -23,7 +34,6 @@ Things that a user is able to do:
 * As a JavaScript user, this was a learning experience to use an IDE for the first time while using Java. I used IntelliJ and realized near the end of the project that I did not know how to push from GitHub from IntelliJ and learned to make a big commit.
 
 ## Future Iterations:
-* Something that I would hope to add is the functionality to do multiple things on the same 'run' of the program. As it stands, you are only able to do one thing per program run.
 * I would like to add a 'persistent state' of the data on this program so that when things happen, they persist and continue to be true. For example, if you add a friend, when you come back later the friend should be there.
 
 ## Working Demo:
