@@ -88,7 +88,7 @@ public class Main {
          }
      }
 
-     public void userDashBoard(String userName) {
+     public void userDashBoard(String userName, Main main) {
         System.out.println("Welcome " + userName + ", would you like to (choose a number): ");
         System.out.println("1. View My Posts");
         System.out.println("2. View Friends");
@@ -96,6 +96,7 @@ public class Main {
         System.out.println("4. Delete Posts");
         System.out.println("5. Add Friends");
         System.out.println("6. Delete Friends");
+        System.out.println("7. Logout");
 
         String choice = input.nextLine();
 
@@ -104,10 +105,18 @@ public class Main {
             ArrayList<String> posts = userData.postData(userName);
             System.out.println(posts);
 
+            System.out.println("");
+
+            main.userDashBoard(userName, main);
+
         } else if (choice.equals("2")) {
             //here's your friends!
             ArrayList<String> friends = userData.friendsData(userName);
             System.out.println(friends);
+
+            System.out.println("");
+
+            main.userDashBoard(userName, main);
 
         } else if (choice.equals("3")) {
             //show the posts... then ask what one you want to change and the new content.
@@ -125,6 +134,10 @@ public class Main {
             System.out.println("Here's your new posts: ");
             System.out.println(newPosts);
 
+            System.out.println("");
+
+            main.userDashBoard(userName, main);
+
         } else if (choice.equals("4")) {
 
             ArrayList<String> posts = userData.postData(userName);
@@ -138,6 +151,9 @@ public class Main {
             System.out.println("Here's your new posts: ");
             System.out.println(newPosts);
 
+            System.out.println("");
+
+            main.userDashBoard(userName, main);
 
         } else if (choice.equals("5")) {
             //here are your friends, who would you like to add?
@@ -154,6 +170,10 @@ public class Main {
             System.out.println("Here's your new friends list: ");
             System.out.println(newFriends);
 
+            System.out.println("");
+
+            main.userDashBoard(userName, main);
+
         } else if (choice.equals("6")) {
             //here are your friends, which would you like to delete?
             ArrayList<String> friends = userData.friendsData(userName);
@@ -168,8 +188,16 @@ public class Main {
             System.out.println("Here's your new friends list: ");
             System.out.println(newFriends);
 
+            System.out.println("");
+
+            main.userDashBoard(userName, main);
+
+        } else if (choice.equals("7")) {
+            System.out.println("You have Logged Out");
+
         } else {
             System.out.println("Sorry, that was not one of the choices. Please login and try again");
+
         }
      }
 
@@ -177,7 +205,7 @@ public class Main {
         Main main = new Main();
         String getUserName = main.initialMessage();
         if (!getUserName.isBlank()) {
-            main.userDashBoard(getUserName);
+            main.userDashBoard(getUserName, main);
         }
     }
 }
