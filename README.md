@@ -33,6 +33,7 @@ java -cp lib/practiceCRUD.jar:classes sample.Main
 * This project was really enjoyable to learn a new language, especially one that is so explicit with the way that variables are written. Coming from JavaScript, this language was easy to understand with classes but some of the intricacies took a while to fully understand how it works.
 * As a user, you are able to add friends, delete friends, change a post, delete a post, view your friends, and view your posts.
 * As a JavaScript user, this was a learning experience to use an IDE for the first time while using Java. I used IntelliJ and realized near the end of the project that I did not know how to push from GitHub from IntelliJ and learned to make a big commit.
+* In addition, learning how to make the program accessible on the terminal was a big learning experience as well.
 
 ## Future Iterations:
 * I would like to add a 'persistent state' of the data on this program so that when things happen, they persist and continue to be true. For example, if you add a friend, when you come back later the friend should be there.
